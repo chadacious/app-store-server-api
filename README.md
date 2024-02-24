@@ -1,3 +1,15 @@
+# Enjoy's fork
+I created this fork so we could use this package with bun which at this time (2/24/2024) does not yet support X509Certificate
+This uses a different library `jsrasign` instead (much slower that node's X509Cerfificate btw).
+
+Once bun supports X509Certificate we can depreacte this fork.
+
+To deploy, increment the version in package.json and run:
+```
+npm run build
+npm publish --access public
+```
+
 # app-store-server-api
 A Node.js client for the [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi).
 
